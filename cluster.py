@@ -1,3 +1,8 @@
+"""
+TFKMeansCluster function made by Sachin Joglekar:
+https://codesachin.wordpress.com/2015/11/14/k-means-clustering-with-tensorflow/
+
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -61,7 +66,7 @@ def TFKMeansCluster(vectors, noofclusters):
 		cluster_assigns = []
 		for assignment in assignments:
 			cluster_assigns.append(tf.assign(assignment,
-											 assignment_value))
+				assignment_value))
 
 		### Now lets construct the node that will compute the mean
 		## The placeholder for the input
